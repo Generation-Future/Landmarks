@@ -12,44 +12,56 @@ struct ContentView: View {
     var body: some View {
        
         
-        
-        VStack {
+        HStack(alignment: .center){
+            
+            
+            VStack(alignment: .center) {
             
             MapView()
                 .frame(height: 400)
                 .edgesIgnoringSafeArea(.top)
+               
             
             CircleImage()
-                .offset(y: -130)
-                .padding(.bottom, -130)
+                .offset(y: -100)
+                .padding(.bottom, -150)
             
             
             
-            VStack(alignment: .leading){
-                Text("Turtle Rock")
+            VStack(alignment: .center){
+                Text("Hüttlingen")
                     .font(.title)
-                HStack {
-                    Text("Joshua Tree National Park")
-                        
-                        Spacer()
-                        .font(.subheadline)
-                    Text(/*@START_MENU_TOKEN@*/"California"/*@END_MENU_TOKEN@*/)
-                        .font(.subheadline)
+                
+                    .padding()
+                    .padding()
+                    .padding()
+                    .padding()
+                    .padding()
+                    .padding()
+               
+           
+                   Text("Auchtertown")
 
-                    
+                    Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
                 }
                 
                 
             }
                 
-            .padding()
-            
-            Spacer()
+       
+       
         }
     
-        
     }
-}
+    }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
